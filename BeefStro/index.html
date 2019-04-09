@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dylans BeefStro</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/mystyles.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Righteous" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+<!-- nav bar -->
+	<div class="topNav">
+		<div class="topNav1">
+			<h2>Home</h2>
+		</div>
+		<div class="topNav1">
+			<h2>Menu</h2>
+		</div>
+		<div class="topNav1">
+			<h1>Dylans BeefStro</h2>
+		</div>
+		<div class="topNav1">
+			<h2>About</h2>
+		</div>
+		<div class="topNav1">
+			<h2>Contact</h2>
+		</div>
+	</div>
+<!-- End of NavBar -->
+	<div class="header1">
+		<h1>Menu</h1>
+	</div>
+	<div class="mainMenu">
+		<div class="menuDescription">
+			<h2 id="myBtn">Drinks</h2>
+				<!-- The modal -->
+				<div id="myModal" class="modal">
+				  <!-- Modal content -->
+				  <div class="modal-content">
+				    <span class="close">&times;</span>
+				    <!--Modal heading -->
+				    <p id="modalText">Drinks</p>
+				    <label>Please select your drink</label>
+					 <select class="form-control" id="drinks">
+					 <option value="">Select your drink</option>
+				      <option value="coke">Coke</option>
+				      <option value="sprit">Sprit</option>
+				      <option value="fanta">Fanta</option>
+				      <option value="beer">Beer</option>
+				      <option value="wine">Wine</option>
+				    </select><br>
+					<button type="button" class="btn btn-outline-danger" onclick="favDrink()">Submit Order</button>
+				  </div>
+				</div>
+
+				<!-- Modal content2 -->
+				<div id="myModal2" class="modal2">
+				  <div class="modal-content">
+				    <span class="close2">&times;</span>
+				 <!--Modal heading -->
+				    <p id="modalText">Steaks</p>
+				    <label>Please select your steak</label>
+					 <select class="form-control" id="steaks">
+					 <option value="">Select a steak</option>
+				      <option value="rumpsteak">Rump Steak</option>
+				      <option value="filletsteak">Fillet Steak</option>
+				      <option value="tbonesteak">T-Bone Steak</option>
+				      <option value="sirloin">Sirloin</option>
+				      <option value="ribeye">Rib-Eye</option>
+				    </select><br>
+					<button type="button" class="btn btn-outline-danger" onclick="favSteak()">Submit Order</button>
+				  </div>
+				</div>
+
+		  		<!-- Modal content3 -->
+				<div id="myModal3" class="modal3">
+				  <div class="modal-content">
+				    <span class="close3">&times;</span>
+				     <!--Modal heading -->
+				    <p id="modalText">Tip</p>
+				    <label>Fill in tip ammount</label>
+				    <input type="number" class="form-control" id="tipValue" placeholder="Enter in tip ammount" required>
+					 <br>
+					<button type="button" class="btn btn-outline-danger" onclick="addTip()">Add Tip</button>
+ 				</div>
+				</div>
+
+				<!-- Modal content4 -->
+				<div id="myModal4" class="modal4">
+				  <!-- Modal content4 -->
+				  <div class="modal-content">
+				    <span class="close4">&times;</span>
+				    <p id="modalText">Your Total Ammount</p>
+				    <h1 id="finalAmmount"> </h1>
+					<button type="button" class="btn btn-outline-danger" onclick="closeWindow()">Close Window</button>
+				  </div>
+				</div>
+
+				<!-- Menu -->
+				<ul>
+					<li>Coke ... R15.00</li>
+					<li>Sprit ... R14.00</li>
+					<li>Fanta ... R14.00</li>
+					<li>Beer ... R30.00</li>
+					<li>Wine ... R27.00</li>
+				</ul>
+			<h2 id="myBtn2">Steaks</h2>
+				<ul>
+					<li>Rump Steak ... R70.00</li>
+					<li>Fillet Steak ... R100.00</li>
+					<li>T-Bone Steak ... R80.00</li>
+					<li>Sirloin ... R120.00</li>
+					<li>Rib-Eye ... R200.00</li>
+				</ul>
+				<!-- End of Menu -->
+		</div>
+		<div class="menuNav">
+			<h1> Your Order: </h1>
+			<h2 id="order1"></h2>
+			<h2 id="order2"></h2>
+			<h2 id="tip1"></h2>
+			<h2 id="total"></h2>
+			<div class="buttonAlign">
+				<button id="myBtn3"  class="btn btn-danger checkButton">Add A tip </button>
+				<button onclick="totalCal()"  class="btn btn-danger checkButton">Checkout</button>
+			</div>
+		</div>
+	</div>
+<!-- JavaScript -->
+	<script type="text/javascript" src="javascript/scripts.js"></script>
+</div>
+</body>
+</html>
